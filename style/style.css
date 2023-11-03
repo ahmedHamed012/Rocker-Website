@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-family: "Poppins";
+    --mainColor: #7B5244;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.navlinks ul li a {
+    color: var(--mainColor);
+    padding-right: 20px;
+}
+
+.border-bot {
+    width: 10%;
+    height: 2px;
+    display: inline-block;
+    background-color: var(--mainColor);
+    transition: 0.5s;
+}
+
+.sec-head {
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.head-container:hover .border-bot {
+    transform: scaleX(1.7);
+}
+
+.category img {
+    width: 100%;
+}
+
+.category p:first-of-type {
+    color: gray;
+    font-weight: 500;
+}
+
+.category p:last-of-type {
+    font-weight: 500;
+    position: relative;
+}
+
+.penelope {
+    background-color: #f7f3ef;
+}
+
+.quotes {
+    display: flex;
+}
+
+.quotes-head {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.quotes span>i {
+    font-size: 5em;
+    color: var(--mainColor);
+}
+
+.penelope-content {
+    text-align: justify;
+}
+
+.paginations {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.paginations>.slide-btn {
+    width: 40px;
+    height: 2px;
+    background-color: var(--mainColor);
+    margin-right: 10px;
+}
+
+.img-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container>p {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    color: var(--mainColor);
+    font-size: 1.2em;
+}
+
+.img-container>p:last-child {
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    left: 10px;
+    color: black;
+    font-size: 1.2em;
+}
+
+.img-container img {
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    filter: grayscale(1);
+}
+
+.img-container img:hover {
+    transform: scale(1.2) rotate(10deg);
+    filter: grayscale(0);
+}
+
+[class*="icon"] {
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+[class*="icon"] img {
+    transition: 0.4s ease-in-out;
+}
+
+.icon-1 img {
+    transform: translateY(-184px);
+}
+
+.icon-2 img {
+    transform: translateY(-366px);
+}
+
+.icon-3 img {
+    transform: translateY(-550px);
+}
+
+.icon-4 img {
+    transform: translateY(-733px);
+}
+
+.icon-0 img:hover {
+    transform: translateY(-90px);
+}
+
+.icon-1 img:hover {
+    transform: translateY(-274px);
+}
+
+.icon-2 img:hover {
+    transform: translateY(-456px);
+}
+
+.icon-3 img:hover {
+    transform: translateY(-645px);
+}
+
+.icon-4 img:hover {
+    transform: translateY(-830px);
+}
+
+.category-svg {
+    border-right: 1px solid #7B5244;
+}
+
+.category-svg:last-child {
+    border-right: none;
+}
+
+.head {
+    text-align: center;
+}
+
+.head .h5 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.head span {
+    font-size: 15px;
+    color: gray;
+}
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.product-img img {
+    width: 100%;
+    display: block;
+}
+
+.product-img img:last-child {
+    position: absolute;
+    background-color: white;
+    transform: rotateY(90deg);
+    transition: 0.3s ease-in-out;
+}
+
+.product-img:hover img:last-child {
+    transform: rotateY(0deg);
+}
+
+.product-card {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+
+.product-details span {
+    color: gray;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.product-details .h5 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product-details button {
+    background-color: var(--mainColor);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 150px;
+    height: 35px;
+    padding: 6px;
+}
+
+.img-video {
+    background-image: url(../images/luxury-classic-modern-bedroom-suite-hotel.jpg);
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #7b52446f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-overlay>p {
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 3.3em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media (max-width:300px) {
+    .video-overlay>p {
+        font-weight: 900;
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 2em;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
+
+.video-overlay>img {
+    height: 6em;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--mainColor);
+    padding:50px 0 0;
+}
+
+footer .about-social button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+footer .about-social button:nth-of-type(1):hover {
+    background-color: #3b5998;
+    border: none;
+}
+
+footer .about-social button:nth-of-type(2):hover {
+    background-color: rgb(231, 77, 137);
+    border: none;
+}
+
+footer .about-social button:nth-of-type(3):hover {
+    background-color: rgb(23, 156, 240);
+    border: none;
+}
+
+footer .about-social button:nth-of-type(4):hover {
+    background-color: rgb(40, 103, 178);
+    border: none;
+}
+
+footer .about-social button:nth-of-type(5):hover {
+    background-color: rgb(185, 56, 158);
+    border: none;
+}
+.footer-head {
+    color: white;
+    font-weight: bold;
+}
+.links-nav {
+    color: #EEE;
+}
+.links-nav:hover {
+    color: white;
+}
+.h-footer {
+    color: #EEE;
+    font-size: 1em;
+}
